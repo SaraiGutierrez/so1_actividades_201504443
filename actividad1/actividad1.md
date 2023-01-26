@@ -1,4 +1,4 @@
-##### Virginia Sarai Gutierrez Depaz 201504443
+#### Virginia Sarai Gutierrez Depaz 201504443
 
 <br>
 
@@ -43,4 +43,15 @@ Separa sus componentes en servidores que se distribuyen en uno o varios nodos y 
 - ExoKernel: no proveen abstracciones de hardware, pero permiten el uso de librerias que brindan mayor funcionalidad debido al acceso directo o casi directo al hardware.
 
 ![](../img/7.png)
-# User vs Kernel model
+
+<br>
+
+# User vs Kernel mode
+
+- Modo Usuario: 
+cuando se inicia un programa en un sistema operativo, digamos Windows, se inicia el programa en modo de usuario. Y cuando un programa en modo usuario solicita ejecutarse, Windows crea un proceso y un espacio de direcciones virtuales (espacio de direcciones para ese proceso). Los programas de modo de usuario tienen menos privilegios que las aplicaciones de modo de usuario y no se les permite acceder a los recursos del sistema directamente. Por ejemplo, si una aplicación en modo de usuario desea acceder a los recursos del sistema, primero deberá pasar por el kernel del sistema operativo mediante llamadas al sistema.  
+
+- Modo Kernel:
+El kernel es el programa central en el que se basan todos los demás componentes del sistema operativo, se utiliza para acceder a los componentes de hardware y programar qué procesos deben ejecutarse en un sistema informático y cuándo, y también administra la interacción entre el software y el hardware de la aplicación. . Por lo tanto, es el programa más privilegiado, a diferencia de otros programas, puede interactuar directamente con el hardware. Cuando los programas que se ejecutan en modo de usuario necesitan acceso al hardware, por ejemplo, una cámara web, primero tiene que pasar por el núcleo mediante una llamada al sistema y, para llevar a cabo estas solicitudes, la CPU cambia del modo de usuario al modo de núcleo en el momento de la ejecución. Después de completar finalmente la ejecución del proceso, la CPU vuelve a cambiar al modo de usuario .
+
+![](../img/8.png)
